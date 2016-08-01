@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var app = express();
 var router = require('./routes/emailRouter');
 
-app.set('port', (process.env.PORT || 8080));
+var port = process.env.PORT || 5000;
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 app.use('/', router);
 
 
-
-app.listen(app.get('port'), function() {
-    console.log('Node app is running on port', app.get('port'));
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
 });
+
+module.exports = app;

@@ -1,12 +1,14 @@
 var express = require('express');
 var mg = require('nodemailer-mailgun-transport');
+var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 
+
 var bodyParser = require('body-parser');
-
-app.use(bodyParser.urlencoded({ extended: true }));
-
 var router = express.Router();
+
+
+router.use(bodyParser.urlencoded({ extended: true }));
 
 router.post('/', function(req, res) {
 
@@ -33,7 +35,7 @@ router.post('/', function(req, res) {
         } else {
             console.log('Message sent: ' + info);
             console.log(req.body.email);
-            res.end({ yo: info.message });
+            res.json({ yo: info.message });
         };
     });
 }); 
