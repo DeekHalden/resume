@@ -1,0 +1,96 @@
+html,body {
+  font-family:Roboto, arial;
+  font-size: 14px !important;
+  margin:0;
+  height:100%;
+  width:100%;
+}
+
+#map_canvas {
+  height:100%;
+}
+
+#nav-div {
+  float: left;
+  width:15%;
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+.top-part {
+  padding-top:4px;
+}
+
+input {
+  width: 100%;
+  margin:  3px ;
+
+}
+
+ul {
+  padding: 0 5px;
+
+}
+
+.item {
+  height: 3em;
+  list-style-type: none;
+  border-bottom:1px solid lightgrey;
+  font-size:16px;
+  border-radius: 2px;
+  margin: 3px;
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+li.not-found {
+  background: #ccc;
+  cursor: default;
+}
+
+.gm-style-iw {
+
+
+  width: 250px !important;
+  
+  left: 2 !important;
+  top: 15 !important;
+overflow:auto;
+}
+
+#iw-container {
+  width: 140px;
+  height: 6em;
+  overflow: auto;
+}
+
+#iw-container .iw-title {
+  font-family:  sans-serif;
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+#iw-container .iw-content {
+  font-weight: 400;
+  margin-right: 1px;
+  font-size: 14px !important;
+
+}
+
+.iw-content img {
+  float: right;
+  left:0px;
+
+}
+
+.iw-subTitle {
+ display: none;
+}
+
+.gmnoprint {
+  padding-left: 420px !important;
+}
