@@ -10,7 +10,7 @@ var router = express.Router();
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
-router.get('/', function(req, res) {
+router.post('/', function(req, res) {
 
 
     var auth = {
