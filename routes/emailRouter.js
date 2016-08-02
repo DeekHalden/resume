@@ -35,7 +35,7 @@ router.post('/', function(req, res) {
         } else {
             console.log('Message sent: ' + info);
             console.log(req.body.email);
-            res.json({ yo: info.message });
+            res.json({ yo: 'You message seccessfully send, You may return to previous page.' });
         };
     });
 }); 
