@@ -19,7 +19,7 @@ h2 {
 
 li,
 p {
-    color: #666;
+    color: #011;
 }
 
 
@@ -93,7 +93,7 @@ main {
 }
 
 .main ul li {
-    font-size: 1.7em;
+    font-size: 2em;
     font-weight: 100;
     padding: 10px;
 }
@@ -217,7 +217,9 @@ button {
 }
 
 .face.back {
+    
     display: block;
+    height: 240px;
     transform: rotateY(180deg);
     box-sizing: border-box;
     padding: 10px;
@@ -226,10 +228,14 @@ button {
     background-color: #f66;
 }
 
+.face.back p {
+    vertical-align: middle;
+}
+
 .button {
     position: absolute;
     left: 35%;
-    bottom: 20px;
+    bottom: 10px;
     vertical-align: bottom;
     padding: 10px;
     border: 1px solid #fff;
