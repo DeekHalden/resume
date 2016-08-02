@@ -25,7 +25,7 @@ router.post('/', function(req, res) {
     var mailOptions = {
         from: ''+req.body.name+' <' + req.body.email + '>',
         to: 'iliy4@ua.fm',
-        subject: 'Text',
+        subject: 'Email form my Page',
         text: req.body.content
     };
     transporter.sendMail(mailOptions, function(error, info) {
