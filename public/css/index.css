@@ -11,7 +11,6 @@ a {
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: normal;
-
 }
 
 h2 {
@@ -33,10 +32,11 @@ p {
     left: 0;
     top: 0;
     z-index: 9999;
-    border-right:1px solid #EEE;
+    border-right: 1px solid #EEE;
 }
 
-.navbar__element,.__projects .__item a img {
+.navbar__element,
+.__projects .__item a img {
     position: relative;
     text-align: center;
     padding: 0;
@@ -55,17 +55,15 @@ p {
     line-height: 0.3em;
     text-decoration: none;
     font-size: 32px;
-
 }
 
-.navbar__element a:visited{
-    color:#666;
-}
-.navbar__element a:hover{
-    color:#C33;
+.navbar__element a:visited {
+    color: #666;
 }
 
-
+.navbar__element a:hover {
+    color: #C33;
+}
 
 .navbar__element img {
     width: 32px;
@@ -109,7 +107,7 @@ main {
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.4em;
     font-family: "ff-tisa-web-pro", Palatino, " Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-weight: 100;
 }
@@ -125,51 +123,8 @@ p {
 
 /*Projects*/
 
-.__projects .__item {
-    width: 100%;
-    height: 240px;
-    margin: 10px auto;
-    display: inline-flex;
-    box-sizing: border-box;
-}
-
-.__projects ul li {
-    padding-bottom: 10px;
-}
-
-.__projects .__item a,
-.__projects .__item .__description {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    height: 240px;
-}
-
-.__projects .__item a img {
-    width: 100%;
-    max-height: 240px;
- 
-
-}
-
-.__projects .__item .__description {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 240px;
-    text-align: center;
-    background-color: #C33;
-    line-height: 1.3em;
-}
-
-.__projects .__item .__description span {
-    overflow-wrap: normal;
-    color:#fff
-}
-
-
-.__contacts ,.__all_contacts p {
+.__contacts,
+.__all_contacts p {
     padding-top: 3em;
 }
 
@@ -190,10 +145,8 @@ p {
     border-color: black;
     outline-color: black;
     font-size: 2.5em;
-    padding: 10px ;
-
+    padding: 10px;
 }
-
 
 .form-control input {
     height: 45px;
@@ -210,4 +163,74 @@ button {
     color: #fff;
     background-color: #000;
     font-size: 2em;
+}
+
+.container {
+    display: flex;
+}
+
+
+#f1_container {
+    flex: 1;  
+    position: relative;
+    margin: 10px auto;
+    max-width: 320px;
+    height: 240px;
+    z-index: 1;
+    perspective: 1000px;
+    -webkit-perspective: 1000px;
+
+}
+
+
+#f1_card {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all .6s linear;
+     
+}
+
+#f1_container:hover #f1_card {
+    transform: rotateY(180deg);
+   
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: no-repeat left 0px;
+    background-size: 100% 240px;
+}
+
+.front.face img {
+    max-height: 240px;
+    max-width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.face.back {
+    display: block;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #f66;
+}
+
+.button {
+    position: absolute;
+    left: 35%;
+    bottom: 20px;
+    vertical-align: bottom;
+    padding: 10px;
+    border: 1px solid #fff;
 }
