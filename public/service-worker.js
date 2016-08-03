@@ -24,7 +24,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/css/index.css","782e943e6378c113d2ce80cf87f554ec"],["/images/game.jpg","3ceaa33afda24ecfba229207264fd0a3"],["/images/github.png","08c03c6a24e5058b9f3556981a23b1d7"],["/images/map.jpg","18cca6ae6a58229c0452646b975c7b5f"],["/images/pizzeria.jpg","53f9092ec89e615ae14de1c06dcd1622"],["/index.html","4c53722b3dd182554bfdebddf1069a6f"],["/scripts/localforage-1.4.0.js","e7b60fed032f5137e2e5813d2c06f3a3"]];
+var precacheConfig = [["/css/index.css","782e943e6378c113d2ce80cf87f554ec"],["/css/index_s.css","3bd194ed9c2c0b00bfedc52a32a77164"],["/images/game.jpg","3ceaa33afda24ecfba229207264fd0a3"],["/images/github.png","08c03c6a24e5058b9f3556981a23b1d7"],["/images/map.jpg","18cca6ae6a58229c0452646b975c7b5f"],["/images/pizzeria.jpg","53f9092ec89e615ae14de1c06dcd1622"],["/index.html","22cd066a21f1704993ace69ef757e1ed"],["/scripts/localforage-1.4.0.js","e7b60fed032f5137e2e5813d2c06f3a3"]];
 var cacheName = 'sw-precache-v2--' + (self.registration ? self.registration.scope : '');
 
 

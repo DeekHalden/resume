@@ -1,0 +1,34 @@
+.navbar {
+	width: 100px;
+}
+
+.navbar__element h3{
+	font-size:.6em;
+}
+
+.navbar__element li {
+
+    padding-bottom: 0.2em;
+}
+main{
+	
+	padding: 0;
+	margin:0  0 0 100px ;
+}
+
+.main {
+	width:95%;
+}
+.container {
+	display: block;
+
+}
+
+#f1_container {
+	margin:20px auto;
+}
+
+.form {
+	width: 95%;
+}
+
