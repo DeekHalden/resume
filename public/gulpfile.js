@@ -52,7 +52,7 @@ gulp.task('serve', ['generate-sw'], function() {
   gulp.watch([
     './*.html',
     './scripts/*.js',
-    './styles/*.css',
+    './css/*.css',
     '!./service-worker.js',
     '!./gulpfile.js'
   ], ['generate-sw'], browserSync.reload);
