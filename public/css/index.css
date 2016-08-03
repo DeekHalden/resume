@@ -173,7 +173,7 @@ button {
 #f1_container {
     flex: 1;  
     position: relative;
-    margin: 10px auto;
+    margin: 10px 20px;
     max-width: 320px;
     height: 240px;
     z-index: 1;
@@ -206,7 +206,7 @@ button {
 }
 
 .front.face img {
-    max-height: 240px;
+    height: 240px;
     max-width: 100%;
     position: absolute;
     margin: auto;
